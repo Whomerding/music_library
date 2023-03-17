@@ -6,6 +6,7 @@ from .serializers import SongSerializer
 from .models import Song
 
 
+
 @api_view(['GET', 'POST'])
 def songs_list(request):
     if request.method == "GET":
@@ -32,3 +33,11 @@ def song_detail(request, pk):
     elif request.method == 'DELETE':
         song.delete()
         return Response (status=status.HTTP_204_NO_CONTENT)
+
+
+    
+
+
+
+
+ 
